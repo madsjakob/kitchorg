@@ -4,6 +4,12 @@ namespace kitchorgapi.recipe
 {
     public class Recipe
     {
-        // A list 1 or more parts/sections
+        public string Title { get; set; }
+        public string Description { get; set; }
+        private SectionList _sections = new SectionList();
+        public SectionList Sections 
+        {
+            get { return _sections; }
+        }
     }
 }
